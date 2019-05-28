@@ -1,7 +1,6 @@
 class UpdateDoctorsColumn < ActiveRecord::Migration[4.2]
   def change
-    update_table :doctors do |t|
-      :hospital = hospital_id
-    end
+    rename_column :doctors, :hospital, :hospital_id
+    change_column :doctors, :hospital_id, :integer 
   end
 end
