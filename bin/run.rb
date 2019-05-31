@@ -40,17 +40,23 @@ while user == nil
       
        user = Patient.find_by(password: patient_password) && Patient.find(patient_id)
          if user
-           # add progress bar #
-          sleep(2)
-          puts "--------------------------------"
-          puts "Welcome back #{user.name}!"
-          puts "--------------------------------"
+            # add progress bar #
+            sleep(2)
+            puts "--------------------------------"
+            puts "Welcome back #{user.name}!"
+            puts "--------------------------------"
+
+        # elsif patient_id != Patient.find
+        #     sleep(2)
+        #     puts "Oh no, looks like we didn't find you...please try again"
+        #     sleep(3)
+        #     system "clear"
         else
-          sleep(2)
-          puts "Oh no, looks like we didn't find you...please try again"
-          sleep(3)
-          system "clear"
-      end   #(searching for password match)#
+            sleep(2)
+            puts "Oh no, looks like we didn't find you...please try again"
+            sleep(3)
+            system "clear"
+        end   #(searching for password match)#
 
  ###### QUIT? ######
     else choice == "Quit?"
