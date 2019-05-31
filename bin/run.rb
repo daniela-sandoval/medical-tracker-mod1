@@ -38,6 +38,7 @@ while user == nil
       patient_id = prompt.ask("Please enter your ID")
       patient_password = prompt.mask("Please enter your password")
       
+        
        user = Patient.find_by(password: patient_password) && Patient.find(patient_id)
          if user
             # add progress bar #
@@ -45,7 +46,6 @@ while user == nil
             puts "--------------------------------"
             puts "Welcome back #{user.name}!"
             puts "--------------------------------"
-
         # elsif patient_id != Patient.find
         #     sleep(2)
         #     puts "Oh no, looks like we didn't find you...please try again"
