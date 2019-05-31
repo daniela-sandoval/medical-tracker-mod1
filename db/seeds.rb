@@ -26,19 +26,19 @@ Record.delete_all
 #
 #
 # ###### 3 PATIENTS ######
-# bob_11 = Patient.create(name: "Bob Belcher", password: 555, age: 34, previous_conditions: "fish allergy and heart murmur")
-# linda_12 = Patient.create(name: "Linda Belcher", password: 666, age: 30, previous_conditions: "sleep apnea")
-# teddy_13 = Patient.create(name: "Teddy Francisco", password: 777, age: 38, previous_conditions: "asthma")
-# tom_14 = Patient.create(name: "Tom Neir", password: 888, age: 34, previous_conditions: "fish allergy and heart murmur")
-# beti_15 = Patient.create(name: "Beti Team", password: 999, age: 30, previous_conditions: "sleep apnea")
-# eric_16 = Patient.create(name: "Eric Nader", password: 001, age: 38, previous_conditions: "asthma")
+bob_11 = Patient.create(name: "Bob Belcher", password: 555, age: 34, previous_conditions: "fish allergy and heart murmur")
+linda_12 = Patient.create(name: "Linda Belcher", password: 666, age: 30, previous_conditions: "sleep apnea")
+teddy_13 = Patient.create(name: "Teddy Francisco", password: 777, age: 38, previous_conditions: "asthma")
+tom_14 = Patient.create(name: "Tom Neir", password: 888, age: 34, previous_conditions: "fish allergy and heart murmur")
+beti_15 = Patient.create(name: "Beti Team", password: 999, age: 30, previous_conditions: "sleep apnea")
+eric_16 = Patient.create(name: "Eric Nader", password: 001, age: 38, previous_conditions: "asthma")
 #
 # ##### 2 RECORDS #####
-record_bob = Record.create(illness: "flu", description: "runny nose and sore body for 7 days", cured: false, patient_id: 11, doctor_id: 25)
-record_tom = Record.create(illness: "strep throat", description: "hoarse throat", cured: false, patient_id: 11, doctor_id: 26)
-record_tom = Record.create(illness: "fever", description: "itchy throat", cured: false, patient_id: 11, doctor_id: 27)
-record_tom = Record.create(illness: "rush", description: "red skin", cured: false, patient_id: 12, doctor_id: 28)
-record_tom = Record.create(illness: "chicken poxs", description: "red spots", cured: false, patient_id: 12, doctor_id: 29)
-record_tom = Record.create(illness: "Pnuimonia", description: "feeling cold", cured: false, patient_id: 12, doctor_id: 30)
+# record_bob = Record.create(illness: "flu", description: "runny nose and sore body for 7 days", cured: false, patient_id: 11, doctor_id: 25)
+# record_tom = Record.create(illness: "strep throat", description: "hoarse throat", cured: false, patient_id: 11, doctor_id: 26)
+# record_tom = Record.create(illness: "fever", description: "itchy throat", cured: false, patient_id: 11, doctor_id: 27)
+# record_tom = Record.create(illness: "rush", description: "red skin", cured: false, patient_id: 12, doctor_id: 28)
+# record_tom = Record.create(illness: "chicken poxs", description: "red spots", cured: false, patient_id: 12, doctor_id: 29)
+# record_tom = Record.create(illness: "Pnuimonia", description: "feeling cold", cured: false, patient_id: 12, doctor_id: 30)
 
  

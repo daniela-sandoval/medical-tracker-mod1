@@ -196,7 +196,7 @@ while menu_choice != "Log-Out?"
                 update_instance.update(illness: update_illness)
                 user.reload
                 puts "--------------------------------"
-                puts "Great! You illness type have been updated"
+                puts "Great! Your record name have been updated"
                 puts "--------------------------------"
             elsif update_choice == "Description"
               update_description = prompt.ask("Write your edited description")
@@ -209,7 +209,7 @@ while menu_choice != "Log-Out?"
                 update_instance.update(description: update_description)
                 user.reload
                 puts "--------------------------------"
-                puts "Great! You description have been updated"
+                puts "Great! Your description have been updated"
                 puts "--------------------------------"
               else update_choice == "Back-to-Menu"
                 menu_choice
